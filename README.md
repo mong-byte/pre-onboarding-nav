@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Wanted Pre-onboarding 사전과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Nav 만들기 입니다.
 
-## Available Scripts
+구현 완료 된 항목은
 
-In the project directory, you can run:
+- 탐색란에 mouseOver시 메뉴가 확장
+- 반응형 구현
+  입니다.
 
-### `npm start`
+사용된 라이브러리는
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- styled-components
+- styled-reset
+- react-fontawesome
+  입니다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+각각의 라이브러리를 선택한 이유는
 
-### `npm test`
+- styled-components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - css를 사용하기 위해 사용하였습니다. scss를 사용하지 않고 styled components를 사용한 이유는
+    스타일링을 위해 많은 className을 사용하지 않고, 필요한 부분에만 className을 붙이는것이 좋다 생각하였기 때문입니다.
+    state, 혹은 props를 이용하여 동적 스타일링이 가능한것도 메리트라 생각하였습니다.
 
-### `npm run build`
+- styled-reset
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - styled-components를 사용하면서 함께 reset을 사용하기 위해서 사용 하였습니다.
+    따로 파일을 만들지 않고, globalStyle에서 간편하게 사용할 수 있어 좋다 생각하였습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- react-fontawesome
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - fontawesome에서 다양한 아이콘들을 가져오기 위해 사용 하였습니다.
+    필요한 여러 svg를 다운로드 해서 사용하는것이 아니라 컴포넌트화 시켜서 사용 할 수 있고, 필요할때 import를 해서
+    간편하게 추가가 가능한면에서 좋다 생각하였습니다.
